@@ -1,0 +1,19 @@
+.landingpage {
+    background-color: #FED811;
+    height: 91vh;
+}
+
+.content {
+    padding: 0 60px;
+}
+
+.navbar-colors {
+    background-color: #e2e2e2;
+}
+
+.option-items a {
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 600;
+    color: rgb(138, 136, 136);
+}
