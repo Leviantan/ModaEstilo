@@ -3,6 +3,10 @@
     height: 91vh;
 }
 
+.navbar-brand {
+    font-family: 'Pacifico', cursive;
+}
+
 .content {
     padding: 0 60px;
 }
