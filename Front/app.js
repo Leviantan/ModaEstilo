@@ -53,19 +53,3 @@ class Comments {
     }
 }
 
-const post1 = new Post(12345, 'Cartagena', '27/08/2022',
-    'Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus aperiam psa in facilis',
-    'Cartagena', 'images/img1.jpg', 4, 500000, null);
-
-const post2 = new Post(12345, 'Cartagena', '27/08/2022',
-    'Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus aperiam psa in facilis',
-    'Cartagena', 'images/img2.jpg', 4, 500000, null);
-const post3 = new Post(12345, 'Cartagena', '27/08/2022',
-    'Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus aperiam psa in facilis',
-    'Cartagena', 'images/img3.jpg', 4, 500000, null);
-
-
-const container1 = document.querySelector('#card-container');
-
-console.log(post1.cardHTML());
-container1.innerHTML = post1.cardHTML();

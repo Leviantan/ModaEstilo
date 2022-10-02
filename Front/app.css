@@ -1,6 +1,35 @@
-.landingpage {
+.bg-color-yellow {
     background-color: #FED811;
-    height: 91vh;
+}
+
+.landingpage {
+    position: relative;
+    height: 92vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url("https://images.unsplash.com/photo-1503424886307-b090341d25d1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1476&q=80");
+    background-size: cover;
+
+}
+
+.nav-link:hover {
+    color: black;
+    font-weight: 500;
+}
+
+.landingpage:before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.relative {
+    position: relative;
 }
 
 .navbar-brand {
