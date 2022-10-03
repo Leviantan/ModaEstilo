@@ -13,11 +13,6 @@
 
 }
 
-.nav-link:hover {
-    color: black;
-    font-weight: 500;
-}
-
 .landingpage:before {
     content: "";
     position: absolute;
@@ -26,6 +21,11 @@
     bottom: 0px;
     left: 0px;
     background-color: rgba(0, 0, 0, 0.5);
+}
+
+.nav-link:hover {
+    color: black;
+    font-weight: 500;
 }
 
 .relative {
@@ -49,4 +49,21 @@
     font-size: 1rem;
     font-weight: 600;
     color: rgb(138, 136, 136);
+}
+
+.card {
+    transition: 0.3s;
+}
+
+.card:hover {
+    background-color: rgba(243, 240, 78, 0.3);
+    opacity: 0.85;
+}
+
+.star {
+    filter: invert(87%) sepia(46%) saturate(1227%) hue-rotate(345deg) brightness(101%) contrast(100%);
+}
+
+.star img {
+    width: 30px;
 }
