@@ -7,6 +7,11 @@ from rest_framework.decorators import api_view
 from API_turismo.models import Turismo
 from API_turismo.serializers import TurismoSerializer
 
+from django.shortcuts import render
+
+def principal(request):
+    return render(request, 'C:/xampp/htdocs/turismo/Turismo/Backend-Turismo/API_turismo/templates/home.html', {})
+
 
 
 @api_view(['GET', 'POST', 'PUT', 'DELETE'])
