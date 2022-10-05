@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>travelAPP</title>
+    <title>TravelAPP</title>
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
@@ -22,7 +22,7 @@
     <nav class="navbar navbar-expand-md navbar-light navbar-colors sticky-top">
         <div class="container-fluid">
             <a href="/" class="navbar-brand">
-                <img src="images/logo1.png" alt="" width="30">
+                <img src="C:/xampp/htdocs/turismo/Turismo/Backend-Turismo/API_turismo/images/logo1.png" alt="" width="30">
                 Nomada_
             </a>
             <button class="navbar-toggler" data-target="#expand" data-toggle="collapse">
@@ -65,7 +65,7 @@
         <div class="row align-items-center bg-color-yellow">
 
             <div class="col-md-6 px-0">
-                <img src="images/img11.jpg" alt="2" class="img-fluid">
+                <img src="C:/xampp/htdocs/turismo/Turismo/Backend-Turismo/API_turismo/images/img11.jpg" alt="2" class="img-fluid">
             </div>
             <div class=" col-md-6">
                 <div class="row justify-content-center my-4 my-md-0">
@@ -197,21 +197,23 @@
                 </div>
 
                 <div class="modal-body">
-                    <form action="">
+                    <!-- <form action="" method="post"> -->
+                    <form action="/admin/login/?next=/admin/" method="post" id="login-form">{% csrf_token %}
+                        <!-- <input type="hidden" name="csrfmiddlewaretoken" value="GeRa07YU1lj4CyeWa3GzcaA6xpsCKaB0aQqFlQ0ecXcMMv7s2iOn1mN07vK1QzZK">-->
                         <div class="row">
                             <div class="col-6">
-                                <input class="form-control mt-3" type="email" name="email" id="email"
-                                    placeholder="Email">
+                                <input class="form-control mt-3" type="text" name="username" id="id_username" placeholder="user name">
                             </div>
                             <div class="col-6">
-                                <input class="form-control mt-3" type="password" name="password" id="password"
-                                    placeholder="Contraseña">
+                                <input class="form-control mt-3" type="password" name="password" id="id_password" placeholder="Contraseña">
+                                <input type="hidden" name="next" value="/admin/">
                             </div>
                         </div>
 
 
                         <div class="d-flex justify-content-center mt-4">
-                            <button class="btn btn-primary">Iniciar sesión</button>
+                            <!-- <button class="btn btn-primary">Iniciar sesión</button> -->
+                            <input class="btn btn-primary" type="submit" value="Iniciar sesión">
                         </div>
 
 
